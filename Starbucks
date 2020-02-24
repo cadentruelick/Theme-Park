@@ -1,0 +1,31 @@
+public class Starbucks extends Vendor
+{	
+	//@param peopleVisiting		the number of people visiting the park
+	public Starbucks(int peopleVisiting)
+	{
+		super(peopleVisiting);
+		
+		//set the average price of food at Starbucks
+		double averageFoodPrice = 5.00;
+		setFoodPrice(averageFoodPrice);
+		
+		//set the cost of materials
+		double materialCost = 1500.00;
+		setCost(materialCost);
+		
+		//set the popularity and calculate the people attending Starbucks
+		double popFactor = .25;
+		setPeoplePerDay(popFactor);
+		
+		//set the number of employees needed to function Starbucks
+		int employeesNeeded = 14;
+		setEmployeesNeeded(employeesNeeded);
+	}
+	
+	//calculate the profit from Starbucks
+	public double getProfit()
+	{
+		return calculateProfit();
+	}
+	
+}
