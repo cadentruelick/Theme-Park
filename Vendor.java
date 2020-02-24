@@ -4,7 +4,7 @@ public class Vendor
 	{
 		foodPrice = averageFoodPrice;
 		peoplePerDay = peopleThere * popFactor;
-		cost = materialCost + (neededEmployees * MIN_WAGE);
+		cost = materialCost + (neededEmployees * MIN_WAGE * 12);
 		employeesNeeded = neededEmployees;
 	}
 	public double calculateProfit()
