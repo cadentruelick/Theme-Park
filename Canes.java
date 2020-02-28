@@ -16,7 +16,7 @@ public class Canes extends Vendor{
 		setFoodPrice(averageFoodPrice);
 		
 		//set the cost of materials
-		cost = 200.00 + 9 * 1/3 * peoplePresent * .8;
+		cost = 200.00 + averageFoodPrice * 1/3 * peoplePresent * .8;
 		setCost(cost);
 		
 		//set popularity and calculate the people attending
