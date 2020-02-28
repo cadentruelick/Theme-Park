@@ -1,0 +1,32 @@
+
+public class Subway extends Vendor
+{	
+	//@param peopleVisiting		the number of people visiting the park
+	public Subway(int peopleVisiting)
+	{
+		super(peopleVisiting);
+		
+		//set the average price of food at Subway
+		double averageFoodPrice = 7.00;
+		setFoodPrice(averageFoodPrice);
+		
+		//set the cost of materials
+		double materialCost =1300.00;
+		setCost(materialCost);
+		
+		//set the popularity and calculate the people attending Subway
+		double popFactor = .20;
+		setPeoplePerDay(popFactor);
+		
+		//set the number of employees needed to function Subway
+		int employeesNeeded = 4;
+		setEmployeesNeeded(employeesNeeded);
+	}
+	
+	//calculate the profit from Subway
+	public double getProfit()
+	{
+		return calculateProfit();
+	}
+	
+}
