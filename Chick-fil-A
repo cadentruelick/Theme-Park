@@ -1,0 +1,31 @@
+public class ChickfilA extends Vendor
+{	
+	//@param peopleVisiting		the number of people visiting the park
+	public ChickfilA(int peopleVisiting)
+	{
+		super(peopleVisiting);
+		
+		//set the average price of food at ChickfilA
+		double averageFoodPrice = 10.00;
+		setFoodPrice(averageFoodPrice);
+		
+		//set the cost of materials
+		double materialCost = 2500.00;
+		setCost(materialCost);
+		
+		//set the popularity and calculate the people attending ChickfilA
+		double popFactor = .85;
+		setPeoplePerDay(popFactor);
+		
+		//set the number of employees needed to function ChickfilA
+		int employeesNeeded = 20;
+		setEmployeesNeeded(employeesNeeded);
+	}
+	
+	//calculate the profit from ChickfilA
+	public double getProfit()
+	{
+		return calculateProfit();
+	}
+	
+}
