@@ -35,7 +35,7 @@ public class Vendor
 	//calculates the total profit from the stand for one day
 	public double calculateProfit()
 	{
-		return (foodPrice * peoplePerDay) - cost - employeesNeeded * 11.13;
+		return (foodPrice * peoplePerDay) - (200 + 1/3 * foodPrice * PeoplePerDay) - employeesNeeded * 11.13 * 12yu;
 	}
 	
 	protected int peopleThere;
