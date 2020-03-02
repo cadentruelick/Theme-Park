@@ -13,13 +13,7 @@ public class Vendor
 	{
 		foodPrice = averageFoodPrice;
 	}
-	
-	//@param materialCost		the total cost of running the stand per day
-	public void setCost(double materialCost)
-	{
-		cost = materialCost;
-	}
-	
+
 	//@param popFactor			the percent, in decimal, of people visiting stand
 	public void setPeoplePerDay(double popFactor)
 	{
