@@ -1,0 +1,104 @@
+
+public abstract class Attraction
+{
+	public Attraction(double hours, int people) 
+	{
+		/*
+		 * hours should be the only user prompted thing in the program everything else 
+		 * should already be in the system.
+		 */
+		hours = hoursPerDay;
+		people = peopleThere; 
+
+	}
+	
+	//methods 
+	public double EmployeeCost()
+	{
+		totalEmployeeCost = numEmployees * MIN_WAGE; //the number of employees multiplied by the minimum wage (can change it if needed)
+		totalEmployeeCost = totalEmployeeCost * hoursPerDay; //# employees multiplied by # of hours the park is open
+		return totalEmployeeCost; 
+	}
+
+	public double calculateProfit()
+	{
+	
+		return totalProfit - (EmployeeCost() + calculateCost()); //the formula for the thing
+	}
+	
+	public double calculateCost()
+	{
+		return costOUtilities; 
+	}
+	
+	public void printStats()
+	{
+		/*
+		 * change the 'RIDE' and the 0's to the name of your ride and the stats in 
+		 * the child class
+		 */
+		String dashes = "- - -";
+		System.out.println("The ride stats for RIDE\n"); //change ride to the name of your ride
+		System.out.printf("%5s%n", "Maximum Number of Riders",dashes, "0"); //number of riders to ride the ride in one go
+		System.out.printf("%5s%n", "Speed of Ride",dashes, "0 m/sec."); //speed of ride in meters per second
+		System.out.printf("%5s%n", "Height of Ride",dashes, "0 meters"); //height of ride in meters
+		System.out.printf("%5s%n", "Length of Ride",dashes, "0 seconds");
+		
+	}
+	
+	/**
+	 * Setting the cost of tickets for the ride
+	 * @param cost cost of the ticket
+	 */
+	public void setCostOfTickets(double cost){
+		costOfTickets = cost;
+	}
+	/**
+	 * setting cost of utilities for the ride
+	 * @param utilities cost of utilities 
+	 */
+	public void setCostOfUtilities(double utilities)
+	{
+		costOUtilities = utilities;
+	}
+	
+	/**
+	 * setting number of employees needed to operate the ride
+	 * @param employees number of employee needed
+	 */
+	public void setNumEmployees(int employees)
+	{
+		numEmployees = employees; 
+	}
+	
+	
+	
+	//abstract methods
+	abstract void startRide();
+
+	abstract void employeesNeeded();
+	
+	
+	//instance fields
+	
+	//cost 
+	private double costOfTickets; //the cost of the tickets
+	private double costOUtilities; //cost of utilities needed to run the ride
+	
+	//people 
+	private int totalNumRiders; // total people who have ridden
+	
+	//employees
+	private int numEmployees; //the number of employees needed
+	private double totalEmployeeCost;
+	
+	//general
+	private int hoursPerDay; //the thing to hold the user input of the hours the park is open
+	private int peopleThere; //everyone in the park
+	private int totalProfit; // the total profit
+	
+	//constants
+	private static final double MIN_WAGE = 11.13; // the minimum wage to pay employees
+	
+	
+}
