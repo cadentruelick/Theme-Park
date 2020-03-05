@@ -1,0 +1,36 @@
+
+public class teacups extends Attraction
+{
+
+	public teacups(double hours, int people) {
+		super(hours, people);
+	}
+
+	@Override
+	void startRide() //overrides the abstract startRide method
+	{
+		
+		//costs & money things
+		setCostOfTickets(2);
+		setCostOfUtilities(400);
+		
+	}
+
+	@Override
+	void employeesNeeded() //overrides the abstract employeesNeeded method
+	{
+		setNumEmployees(2);
+	}
+	
+	@Override
+	public void printStats() //overrides print stats in the parent class
+	{
+		String dashes = "- - -";
+		System.out.println("The ride stats for Teacups\n"); //change ride to the name of your ride
+		System.out.printf("%5s%n", "Maximum Number of Riders",dashes, "60"); //number of riders to ride the ride in one go
+		System.out.printf("%5s%n", "Speed of Ride",dashes, "13 m/sec."); //speed of ride in meters per second
+		System.out.printf("%5s%n", "Height of Ride",dashes, "0.3 meters"); //height of the ride in meters
+		System.out.printf("%5s%n", "Length of Ride",dashes, "90 seconds"); //length of time for each ride in seconds
+	}
+
+}
