@@ -10,7 +10,7 @@ public class ChickfilA extends Vendor
 		setFoodPrice(averageFoodPrice);
 		
 		//set the popularity and calculate the people attending ChickfilA
-		double popFactor = .85;
+		double popFactor = .4;
 		setPeoplePerDay(popFactor);
 		
 		//set the number of employees needed to function ChickfilA
