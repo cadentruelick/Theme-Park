@@ -16,7 +16,7 @@ public class Canes extends Vendor{
 		setFoodPrice(averageFoodPrice);
 		
 		//set popularity and calculate the people attending
-		popFactor = .80;
+		popFactor = .5;
 		setPeoplePerDay(popFactor);
 		
 		//set the number of employees
