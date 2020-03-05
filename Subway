@@ -10,10 +10,6 @@ public class Subway extends Vendor
 		double averageFoodPrice = 7.00;
 		setFoodPrice(averageFoodPrice);
 		
-		//set the cost of materials
-		double materialCost =1300.00;
-		setCost(materialCost);
-		
 		//set the popularity and calculate the people attending Subway
 		double popFactor = .20;
 		setPeoplePerDay(popFactor);
