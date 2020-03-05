@@ -9,10 +9,6 @@ public class ChickfilA extends Vendor
 		double averageFoodPrice = 10.00;
 		setFoodPrice(averageFoodPrice);
 		
-		//set the cost of materials
-		double materialCost = 200.00 + 3.33 * .85 * peopleVisiting;
-		setCost(materialCost);
-		
 		//set the popularity and calculate the people attending ChickfilA
 		double popFactor = .85;
 		setPeoplePerDay(popFactor);
