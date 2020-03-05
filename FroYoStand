@@ -13,14 +13,15 @@ public class FroYo extends Vendor{
 		//setting the average amount of food spent at the stand
 		super.setFoodPrice(5.0);
 		
-		//setting the cost of materials
-		super.setCost(50);
-		
 		//setting the employees needed to run the stand
 		super.setEmployeesNeeded(6);
 		
 		//setting the people that will go to the stand based on the popularity factor of 30%
 		super.setPeoplePerDay(0.3);
+	}
+	public double getProfit()
+	{
+		return calculateProfit();
 	}
 
 	
