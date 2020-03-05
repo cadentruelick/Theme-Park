@@ -15,10 +15,6 @@ public class Chipotle extends Vendor
 		double popFactor = .2;
 		setPeoplePerDay(popFactor);
 		
-		//set the cost of materials
-		double materialCost = peopleVisiting * popFactor * 3.7;		//material cost depends on how many people will be at chipotle
-		setCost(materialCost);
-		
 		//set the # if employees needed to function Starbucks
 		int employeesNeeded = 5;
 		setEmployeesNeeded(employeesNeeded);
