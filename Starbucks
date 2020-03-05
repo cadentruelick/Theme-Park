@@ -9,10 +9,6 @@ public class Starbucks extends Vendor
 		double averageFoodPrice = 5.00;
 		setFoodPrice(averageFoodPrice);
 		
-		//set the cost of materials
-		double materialCost = 1500.00;
-		setCost(materialCost);
-		
 		//set the popularity and calculate the people attending Starbucks
 		double popFactor = .25;
 		setPeoplePerDay(popFactor);
