@@ -5,12 +5,11 @@ public class ChurroStand extends Vendor
 	{
 		super(peopleVisiting);
 		setFoodPrice(4.75);
-		setCost(1);
-		setPeoplePerDay(.75);
+		setPeoplePerDay(.5);
 		setEmployeesNeeded(2);
 	}
-	public double calculateProfit()
+	public double getProfit()
 	{
-		return (foodPrice * peoplePerDay) - (cost * peoplePerDay);
+		return calculateProfit();
 	}
 }
