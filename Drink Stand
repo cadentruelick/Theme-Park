@@ -11,7 +11,7 @@ public class DrinkStand extends Vendor
 		setFoodPrice(averageFoodPrice);
 		
 		//set the popularity and calculate the people attending the drink stand
-		double popFactor = .25;
+		double popFactor = .4;
 		setPeoplePerDay(popFactor);
 		
 		//set the number of employees needed to function Starbucks
