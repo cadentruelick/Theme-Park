@@ -36,14 +36,14 @@ public abstract class Attraction
 		/*
 		 * change the 'RIDE' and the 0's to the name of your ride and the stats in 
 		 * the child class
+		 *
+		 *String dashes = "- - -";
+		 *System.out.println("The ride stats for RIDE\n"); //change ride to the name of your ride
+		 *System.out.printf("%5s%n", "Maximum Number of Riders",dashes, "0"); //number of riders to ride the ride in one go
+		 *System.out.printf("%5s%n", "Speed of Ride",dashes, "0 m/sec."); //speed of ride in meters per second
+		 *System.out.printf("%5s%n", "Height of Ride",dashes, "0 meters"); //height of ride in meters
+		 *System.out.printf("%5s%n", "Length of Ride",dashes, "0 seconds");
 		 */
-		String dashes = "- - -";
-		System.out.println("The ride stats for RIDE\n"); //change ride to the name of your ride
-		System.out.printf("%5s%n", "Maximum Number of Riders",dashes, "0"); //number of riders to ride the ride in one go
-		System.out.printf("%5s%n", "Speed of Ride",dashes, "0 m/sec."); //speed of ride in meters per second
-		System.out.printf("%5s%n", "Height of Ride",dashes, "0 meters"); //height of ride in meters
-		System.out.printf("%5s%n", "Length of Ride",dashes, "0 seconds");
-		
 	}
 	
 	/**
