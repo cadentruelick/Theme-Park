@@ -7,20 +7,20 @@ public class Chipotle extends Vendor
 	{
 		super(peopleVisiting);
 		
-		//set the average price of food at Starbucks
+		//set the average price of food at Chipotle
 		double averageFoodPrice = 9.00;
 		setFoodPrice(averageFoodPrice);
 		
-		//set the popularity and calculate the people attending Starbucks
+		//set the popularity and calculate the people attending Chipotle
 		double popFactor = .2;
 		setPeoplePerDay(popFactor);
 		
-		//set the # if employees needed to function Starbucks
+		//set the # if employees needed to function Chiptole
 		int employeesNeeded = 5;
 		setEmployeesNeeded(employeesNeeded);
 	}
 	
-	//calculate the profit from Starbucks
+	//calculate the profit from Chipotle
 	public double getProfit()
 	{
 		return calculateProfit();
